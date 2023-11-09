@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 public class FirstSimpleTest {
     @BeforeAll
     static void beforeAll(){
-        System.out.println("@Before method");
+        System.out.println("@Befoure method");
     }
     @BeforeEach
     void beforeEach(){
