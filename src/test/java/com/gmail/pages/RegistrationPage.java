@@ -5,12 +5,11 @@ import com.gmail.pages.components.CaledarComponent;
 import com.gmail.pages.components.LoadPicture;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class ReristrationPage {
+public class RegistrationPage {
 
 
     SelenideElement
@@ -77,7 +76,7 @@ public class ReristrationPage {
     }
 
 
-    public ReristrationPage checkResultsValue(String key, String value) {
+    public RegistrationPage checkResultsValue(String key, String value) {
         resultsTable.$(byText(key))
                 .parent().shouldHave(text(value));
         return this;

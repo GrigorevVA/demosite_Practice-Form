@@ -2,7 +2,7 @@ package com.gmail.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
-import com.gmail.pages.ReristrationPage;
+import com.gmail.pages.RegistrationPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +21,7 @@ public class AutomationPracticeForm {
     String currentAdress=faker.address().streetAddress();
     String userNumber= faker.phoneNumber().cellPhone().replaceAll("\\D+", "");
 
-    ReristrationPage registrationPage = new ReristrationPage();
+    RegistrationPage registrationPage = new RegistrationPage();
     @BeforeAll
     static void setUP() {
         Configuration.baseUrl = "https://demoqa.com";
